@@ -12,7 +12,8 @@
 - `tools/`: one page per tool (`total-resistance.html` is the first)
 - `css/styles.css`: shared styles, including the light and dark colours
 - `js/theme.js`: light/dark theme toggle, shared by every page
-- `js/total-resistance.js`: logic for the total resistance solver
+- `js/total-resistance.js`: logic for the total resistance solver (sliders, maths, readouts)
+- `js/circuit-diagram.js`: draws the circuit (12 V battery, resistors, light bulb) as an SVG
 - `README.md`
 - `CLAUDE.md` (this file)
 
@@ -40,6 +41,7 @@ A web portal where visitors try small Electrical Engineering tools, for students
 1. **Phase 1:** the portal plus its first tool, the total resistance solver (series or parallel).
    - [x] Portal homepage with a placeholder "Tool 1 — coming soon" card that opens and closes (neutral styling for now)
    - [x] Build the total resistance solver, replacing the placeholder card and page (plain styling)
+   - [x] Add resistor sliders and a circuit diagram with a 12 V battery and a light bulb whose brightness follows the total resistance
 2. **Phase 2:** add more Electrical Engineering tools, one at a time.
 3. **Phase 3:** make tools easier to find as the list grows (grouping, search).
 

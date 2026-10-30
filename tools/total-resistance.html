@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="../css/styles.css">
   <script src="../js/theme.js"></script>
+  <script src="../js/circuit-diagram.js" defer></script>
   <script src="../js/total-resistance.js" defer></script>
 </head>
 <body>
@@ -33,9 +34,19 @@
       </fieldset>
     </form>
 
+    <figure class="circuit">
+      <svg id="circuit" viewBox="0 0 480 240" role="img" aria-label="Circuit diagram"></svg>
+      <figcaption class="muted">The resistors are the load on a 12 V battery. Brightness is relative to full power at 10 &Omega;; it is a simple model, not a real bulb.</figcaption>
+    </figure>
+
     <div class="result" role="status" aria-live="polite">
       <h2>Total resistance</h2>
       <p id="result" class="result-value"></p>
+      <dl class="readouts">
+        <div><dt>Current</dt><dd id="current"></dd></div>
+        <div><dt>Bulb power</dt><dd id="power"></dd></div>
+        <div><dt>Brightness</dt><dd id="brightness"></dd></div>
+      </dl>
     </div>
   </main>
 </body>
