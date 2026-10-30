@@ -7,8 +7,10 @@
 
 ## Project Structure
 
-The repository is nearly empty for now. Currently it holds only:
-
+- `index.html`: portal homepage with one placeholder tool card
+- `tools/`: one page per tool (`tool-1.html` is a placeholder)
+- `css/styles.css`: shared styles, including the light and dark colours
+- `js/theme.js`: light/dark theme toggle, shared by every page
 - `README.md`
 - `CLAUDE.md` (this file)
 
@@ -34,6 +36,8 @@ A web portal where visitors try small Electrical Engineering tools, for students
 ### Phases
 
 1. **Phase 1:** the portal plus its first tool, the total resistance solver (series or parallel).
+   - [x] Portal homepage with a placeholder "Tool 1 — coming soon" card that opens and closes (neutral styling for now)
+   - [ ] Build the total resistance solver
 2. **Phase 2:** add more Electrical Engineering tools, one at a time.
 3. **Phase 3:** make tools easier to find as the list grows (grouping, search).
 
