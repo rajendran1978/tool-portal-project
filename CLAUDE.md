@@ -4,6 +4,7 @@
 
 - Plain HTML, CSS, and JavaScript only.
 - No frameworks, no build step. Files open directly in a browser.
+- Design: "Clean Lab" (warm off-white, soft rounded cards, teal accent). Font: Inter from Google Fonts, falling back to the system font.
 
 ## Project Structure
 
