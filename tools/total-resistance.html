@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Total resistance solver</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/theme.js"></script>
+  <script src="../js/total-resistance.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">Total resistance solver</h1>
+    <button id="theme-toggle" class="theme-toggle" type="button">Switch to dark theme</button>
+  </header>
+
+  <main>
+    <p><a href="../index.html">&larr; Back to all tools</a></p>
+
+    <form id="solver" novalidate>
+      <fieldset class="field-group">
+        <legend>How are the resistors connected?</legend>
+        <label><input type="radio" name="mode" value="series" checked> Series</label>
+        <label><input type="radio" name="mode" value="parallel"> Parallel</label>
+        <p id="mode-help" class="muted"></p>
+      </fieldset>
+
+      <fieldset class="field-group">
+        <legend>Resistors</legend>
+        <div id="rows"></div>
+        <button id="add" class="button" type="button">Add resistor</button>
+      </fieldset>
+    </form>
+
+    <div class="result" role="status" aria-live="polite">
+      <h2>Total resistance</h2>
+      <p id="result" class="result-value"></p>
+    </div>
+  </main>
+</body>
+</html>

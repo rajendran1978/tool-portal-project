@@ -117,3 +117,72 @@ main {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.field-group {
+  margin: 0 0 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.field-group label {
+  margin-right: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.row label {
+  flex: 0 0 100%;
+  margin: 0;
+}
+
+.row input[type="number"] {
+  flex: 1 1 8rem;
+  min-width: 0;
+}
+
+input[type="number"],
+select {
+  min-height: 44px;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+}
+
+.button {
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--card-bg);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.result {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card-bg);
+}
+
+.result h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.1rem;
+}
+
+.result-value {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
